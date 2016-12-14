@@ -1,2 +1,109 @@
-<h1>Quiz#question</h1>
-<p>Find me in app/views/quiz/question.html.erb</p>
+ <div class="menuBar navbar-fixed-top align-middle">
+    <div class="container">
+        <div class="logo">Investgame</div>
+        <div class="nav"> 
+            <ul>
+                <li>Menu1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+            </ul> 
+        </div>
+    </div>
+</div>
+
+<div class="content text-center">
+
+    <div class="cardDIV_1 col-sm-8 col-sm-offset-2">
+    		<h2 class="text-center pergunta">
+    			Se eu acho que a taxa básica de juros (Selic) vai subir nos próximos 2 anos, em qual título devo aplicar?
+    		</h2>
+        <div class="row row-eq-height" >
+            <div class="col-sm-3"></div>
+            <div class="cardDIV_2 col-sm-2 text-center" onmouseover="this.style.background='#f0f0f0';" onmouseout="this.style.background='white';"><img src="img/tesouro.png" width="100"><br>Tesouro Selic  2021</div>
+            <div class="col-sm-2"></div>
+            <div class="cardDIV_2 col-sm-2 text-center" onmouseover="this.style.background='#f0f0f0';" onmouseout="this.style.background='white';"><img src="img/tesouro.png" width="100"><br>Tesouro prefixado 2023</div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+    <div class="cardDIV_1 ajudinha col-sm-8 col-sm-offset-2">
+		<h2 class="text-center">
+			Vai uma ajudinha?
+		</h2>
+        <!-- Zozo Tabs Start-->
+        <div id="tabbed-nav2">
+
+            <!-- Tab Navigation Menu -->
+            <ul>
+                <li><a>Overview<span>New Features in Zozo Tab</span></a></li>
+                <li><a>Subscribe<span>New Releases and Updates</span></a></li>
+                <li><a>Themes<span>10 Preset themes</span></a></li>
+                <li><a>Support<span>Step-by-step Guide</span></a></li>
+                <li><a>Purchase<span>Get Zozo Tabs Now!</span></a></li>
+            </ul>
+
+            <!-- Content container -->
+            <div>
+
+                <!-- Overview -->
+                <div>
+                    <h4>Overview</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer</p>
+                </div>
+
+                <!-- Subscribe -->
+                <div>
+                    <h4>Subscribe</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer</p>
+                </div>
+
+                <!-- Themes -->
+                <div>
+                    <h4>Themes</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer</p>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4>Support</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer</p>
+                </div>
+
+                <!-- Purchase -->
+                <div>
+                    <h4>Purchase</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Zozo Tabs End-->
+
+
+
+    </div>
+
+</div>
+
+        <script>
+        jQuery(document).ready(function ($) {
+
+            /* jQuery activation and setting options for second tabs*/
+            $("#tabbed-nav2").zozoTabs({
+                position: "top-left",
+                orientation: "vertical",
+                multiline: true,
+                style: "pills",
+                theme: "flat-turquoise",
+                spaced: true,
+                rounded: false,
+                bordered: false,
+                animation: {
+                    easing: "easeInOutExpo",
+                    duration: 450,
+                    effects: "slideH"
+                }
+            });
+        });
+        </script>
